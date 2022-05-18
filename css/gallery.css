@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* CSS Variable */
+
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 5px 30px rgba(10, 10, 10, 0.8);
+}
+
+.wrapper {
+    display: grid;
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 17px 17px 17px 17px;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: rgb(175, 175, 175);
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+
+
+.main-nav ul {
+    display: grid;
+    gap: 100px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.lang {
+    text-decoration: none;
+}
+
+.lng {
+    background-color: rgb(7, 7, 7);
+}
+
+.name a:link, .name a:visited {
+    background-color: #0a0a0a;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 30px 30px 30px 30px;
+    line-height: 0.5em;
+  }
+
+  .name a:hover, .name a:active {
+    background-color: black;
+  }
+
+
+.main-nav a {
+    background: linear-gradient(to left, rgb(7, 7, 7), rgb(255, 255, 255));
+    /*background-image: url('makara.jpg');
+    background-size:cover;*/
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow);
+    border-radius: 17px 0px 17px 0px;
+    
+}
+
+.main-nav a .home {
+    background-image: url('../images/plaid_s.jpg');
+    background-size:cover;
+}
+/*
+.home {
+    background-image: url('makara.jpg');
+}
+*/
+.plaid {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-nav a:hover {
+    background: linear-gradient(to right, rgb(78, 124, 194), white);
+    color: rgb(7, 7, 7);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "pic1 pic2 pic3" "pic4 pic5 pic6";
+}
+
+section.pic1 {
+    grid-area: pic1;
+    background-color:b(255, 255, 255);
+
+}
+
+section.pic2 {
+    grid-area: pic2;
+    background-color: aua;
+    
+}
+
+section.pic3 {
+    grid-area: pic3;
+    background-color: aua;
+}
+
+section.pic4 {
+    grid-area: pic4;
+    background-color: aua;
+}
+
+section.pic5 {
+    grid-area: pic5;
+    background-color: aua;
+}
+
+section.pic6 {
+    grid-area: pic6;
+    background-color:aqa;
+}
